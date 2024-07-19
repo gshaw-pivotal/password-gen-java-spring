@@ -22,6 +22,6 @@ public class Controller {
     public ResponseEntity<String> generate(
             @RequestBody GenerateRequest request
     ) {
-        return ResponseEntity.status(200).body("");
+        return ResponseEntity.status(200).body(generateService.generate(request));
     }
 }
